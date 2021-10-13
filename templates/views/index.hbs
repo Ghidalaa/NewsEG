@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is News for Egypt Right Now</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h1 style="color:red ; text-align:center" >This is News for Egypt Right Now</h1>
+        {{#each newss}}
+        <div class="card" style="width: 20rem;display:inline-block">
+            <img src={{urlToImage}} class="card-img-top" alt="No photo is found " style="width:18rem;height:100%">
+            <div class="card-body">
+                <h5 class="card-title" style="color:rgb(255, 0, 43) ; ">{{title}}</h5>
+                <p class="card-text">{{description}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </body>
+</html>
+
+
